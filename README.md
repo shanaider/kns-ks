@@ -3,7 +3,7 @@
 ```
 git clone https://github.com/shanaider/kns-ks.git
 cd kns-ks
-sudo cp kubeselect /usr/local/bin/kubectx
+sudo cp kubeselect /usr/local/bin/kubeselect
 sudo cp kubens /usr/local/bin/kubens
 ```
 # Alias
