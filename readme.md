@@ -89,6 +89,8 @@ sudo apt-get install helm
 ```
 
 # Kustomize
+Ref: https://kubectl.docs.kubernetes.io/installation/kustomize/binaries/
+
 ```
 curl -s "https://raw.githubusercontent.com/kubernetes-sigs/kustomize/master/hack/install_kustomize.sh"  | bash
 ```
