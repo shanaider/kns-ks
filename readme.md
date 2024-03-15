@@ -1,13 +1,13 @@
 # Install K3D For Private Provision K8S Cluster
-**Requirement**
-: [KubeCTL](#kubectl)** \
-**Optional Add-On** :
--[Kubens - Kubeselect](#kubeselect--kubens--kubectx) ,
--[JQ - YQ](#jq-yq) 
+**Requirement**  
+: [KubeCTL](#kubectl)**  
+**Optional Add-On**  
+-[Kubens - Kubeselect](#kubeselect--kubens--kubectx)  
+-[JQ-YQ](#jq-yq)  
 -[Helm](#helm)
 
-***Simple Deploy to test
--[Vote](#simple-app-vote-deploy)
+***Simple Deploy to test  
+-[Vote](#simple-app-vote-deploy)  
 -[Nginx](#simple-nginx)
 
 # KubeCTL
