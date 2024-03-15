@@ -1,13 +1,13 @@
 # Install K3D For Private Provision K8S Cluster
-**Requirement**
-: [KubeCTL](#kubectl)** \
-**Optional Add-On** :
--[Kubens - Kubeselect](#kubeselect--kubens--kubectx) ,
--[JQ - YQ](#jq-yq) 
+**Requirement**  
+: [KubeCTL](#kubectl)**  
+**Optional Add-On**  
+-[Kubens - Kubeselect](#kubeselect--kubens--kubectx)  
+-[JQ-YQ](#jq-yq)  
 -[Helm](#helm)
 
-***Simple Deploy to test
--[Vote](#simple-app-vote-deploy)
+***Simple Deploy to test  
+-[Vote](#simple-app-vote-deploy)  
 -[Nginx](#simple-nginx)
 
 # KubeCTL
@@ -33,7 +33,7 @@ ref \
 https://github.com/ahmetb/kubectx
 https://zerokspot.com/weblog/2019/05/31/kubeselect/
 ```
-git clone https://github.com/newkung6/kns-ks.git
+git clone https://github.com/shanaider/kns-ks.git
 cd sourcetool
 sudo cp kubeselect /usr/local/bin/kubeselect
 sudo cp kubectx /usr/local/bin/kubectx
