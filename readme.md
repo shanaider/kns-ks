@@ -1,11 +1,10 @@
 # Install K3D For Private Provision K8S Cluster
 **Requirement**
-: KubeCTL** \
+: [KubeCTL](#kubectl)** \
 **Optional Add-On** :
-Kns ,
-Kubeselect
-JQ YQ
-Helm
+-[Kubens - Kubeselect](#kubeselect--kubens--kubectx) ,
+-[JQ - YQ](#jq-yq) 
+-[Helm](#helm)
 
 
 # KubeCTL
@@ -31,7 +30,7 @@ ref \
 https://github.com/ahmetb/kubectx
 https://zerokspot.com/weblog/2019/05/31/kubeselect/
 ```
-git clone https://github.com/newkung6/k8sstarter.git
+git clone https://github.com/newkung6/kns-ks.git
 cd sourcetool
 sudo cp kubeselect /usr/local/bin/kubeselect
 sudo cp kubectx /usr/local/bin/kubectx
@@ -67,25 +66,16 @@ source ~/.bashrc
 # JQ YQ
 Json Query
 ```
-wget https://github.com/mikefarah/yq/releases/download/v4.27.2/yq_linux_amd64.tar.gz -O  
-tar -zxvf yq_linux_amd64.tar.gz
-mv yq_linux_amd64 /usr/local/bin/yq
+wget https://github.com/mikefarah/yq/releases/download/v4.27.2/yq_linux_amd64.tar.gz -O -| tar -xz && mv ~/yq_linux_amd64 /usr/local/bin/yq
 ```
 Yaml Query
 ```
-wget https://github.com/stedolan/jq/releases/download/jq-1.6/jq-linux64
-mv jq-linux64 jq
-chmod 755 jq
-mv jq /usr/local/bin
+wget https://github.com/stedolan/jq/releases/download/jq-1.6/jq-linux64 && chmod +x ~/jq-linux64 && mv ~/jq-linux64 /usr/bin/jq
 ```
 
 # Helm
 ```
-curl https://baltocdn.com/helm/signing.asc | gpg --dearmor | sudo tee /usr/share/keyrings/helm.gpg > /dev/null 
-sudo apt-get install apt-transport-https --yes
-echo "deb [arch=$(dpkg --print-architecture) signed-by=/usr/share/keyrings/helm.gpg] https://baltocdn.com/helm/stable/debian/ all main" | sudo tee /etc/apt/sources.list.d/helm-stable-debian.list
-sudo apt-get update
-sudo apt-get install helm
+wget https://get.helm.sh/helm-v3.14.3-linux-amd64.tar.gz -O -|tar -xz && mv ~/linux-amd64/helm /usr/local/bin/helm
 ```
 
 # Kustomize
