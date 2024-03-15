@@ -33,7 +33,7 @@ ref \
 https://github.com/ahmetb/kubectx
 https://zerokspot.com/weblog/2019/05/31/kubeselect/
 ```
-git clone https://github.com/newkung6/kns-ks.git
+git clone https://github.com/shanaider/kns-ks.git
 cd sourcetool
 sudo cp kubeselect /usr/local/bin/kubeselect
 sudo cp kubectx /usr/local/bin/kubectx
