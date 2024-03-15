@@ -6,6 +6,9 @@
 -[JQ - YQ](#jq-yq) 
 -[Helm](#helm)
 
+***Simple Deploy to test
+-[Vote](#simple-app-vote-deploy)
+-[Nginx](#simple-nginx)
 
 # KubeCTL
 > Install on linux
@@ -94,4 +97,34 @@ curl -s https://raw.githubusercontent.com/k3d-io/k3d/main/install.sh | bash
 
 k3d cluster create mycluster
 k3d kubeconfig get mycluster > /xxx/.kube/mycluster.yaml #Create Kubeconfig
+```
+
+# Simple App Vote Deploy
+manifest ref
+https://github.com/kodekloudhub/example-voting-app-kubernetes
+
+Check All yaml in kustomize
+```
+cd simplevoteapp-manifest
+kustomize build . 
+```
+Apply All in kustomize
+```
+kubectl apply -k .
+```
+
+port-forward 
+```
+k port-forward svc/voting-service -n votingapp 8080:80
+k port-forward svc/result-service -n votingapp 8080:80
+```
+
+# Simple Nginx
+```
+# Stateless Nginx 
+Ref: https://kubernetes.io/docs/tasks/run-application/run-stateless-application-deployment/
+
+Run this command or apply file nginx.yaml
+```
+kubectl apply -f https://k8s.io/examples/application/deployment.yaml
 ```
