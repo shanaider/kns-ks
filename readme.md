@@ -82,7 +82,7 @@ wget https://get.helm.sh/helm-v3.14.3-linux-amd64.tar.gz -O -|tar -xz && mv ~/li
 ```
 
 # Kustomize
-Ref: https://kubectl.docs.kubernetes.io/installation/kustomize/binaries/
+Ref: https://kubectl.docs.kubernetes.io/installation/kustomize/binaries/  
 
 ```
 curl -s "https://raw.githubusercontent.com/kubernetes-sigs/kustomize/master/hack/install_kustomize.sh"  | bash
