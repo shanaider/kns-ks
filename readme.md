@@ -38,6 +38,10 @@ cd sourcetool
 sudo cp kubeselect /usr/local/bin/kubeselect
 sudo cp kubectx /usr/local/bin/kubectx
 sudo cp kubens /usr/local/bin/kubens
+
+# if not use kubeselect , can set alias 
+
+
 ```
 
 # Alias
@@ -56,7 +60,7 @@ alias kp="kubectl get pod"
 **Noted: kubeselect only support file .yml / .yaml
 
 # FZF 
-Ref \
+Ref: \
 https://github.com/ahmetb/kubectx?tab=readme-ov-file#interactive-mode \
 https://github.com/junegunn/fzf 
 ```
@@ -67,18 +71,22 @@ source ~/.bashrc
 ```
 
 # JQ YQ
+Ref: 
+https://jqlang.github.io/jq/download/ \
+https://github.com/mikefarah/yq
+
 Json Query
 ```
 wget https://github.com/mikefarah/yq/releases/download/v4.27.2/yq_linux_amd64.tar.gz -O -| tar -xz && mv ~/yq_linux_amd64 /usr/local/bin/yq
 ```
 Yaml Query
 ```
-wget https://github.com/stedolan/jq/releases/download/jq-1.6/jq-linux64 && chmod +x ~/jq-linux64 && mv ~/jq-linux64 /usr/bin/jq
+wget https://github.com/stedolan/jq/releases/download/jq-1.6/jq-linux64 && chmod +x ~/jq-linux64 && sudo mv ~/jq-linux64 /usr/bin/jq
 ```
 
 # Helm
 ```
-wget https://get.helm.sh/helm-v3.14.3-linux-amd64.tar.gz -O -|tar -xz && mv ~/linux-amd64/helm /usr/local/bin/helm
+wget https://get.helm.sh/helm-v3.14.3-linux-amd64.tar.gz -O -|tar -xz && sudo mv ~/linux-amd64/helm /usr/local/bin/helm
 ```
 
 # Kustomize
